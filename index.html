@@ -9,73 +9,140 @@
     <style>body { font-family: 'Prompt', sans-serif; }</style>
 </head>
 <body class="bg-[#fcfbf9] text-slate-800">
+
+    <!-- Top Bar -->
+    <div class="bg-gradient-to-r from-slate-900 to-teal-950 text-white text-xs py-2 px-6 flex justify-between items-center">
+        <span>📍 ตำบลคึกคัก อ.ตะกั่วป่า พังงา (รพ.แม่ข่าย: โรงพยาบาลตะกั่วป่า)</span>
+        <div class="flex items-center space-x-4">
+            <a href="tel:076XXXXXX" class="text-rose-400 font-bold hover:underline">📞 EMERGENCY: 076-XXX-XXX</a>
+            <span class="cursor-pointer font-bold bg-teal-600 px-2 py-0.5 rounded">TH | EN</span>
+        </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar" class="bg-rose-600 text-white py-2.5 px-6 text-center text-xs md:text-sm font-medium flex items-center justify-center space-x-3 shadow-inner">
+        <span class="bg-rose-700 font-bold px-2.5 py-0.5 rounded uppercase tracking-wider">⚠️ ประกาศสำคัญ</span>
+        <span>ระบบ X-Ray พร้อมให้บริการปกติ เปิดให้บริการตลอด 24 ชั่วโมง / X-Ray Service Normal Operation 24/7</span>
+    </div>
+
+    <!-- Header / Navbar -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold shadow">🌊+</div>
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-xl flex items-center justify-center text-white font-bold shadow">🌊+</div>
                 <div>
                     <h1 class="font-bold text-base text-slate-900 leading-tight">ศูนย์การแพทย์เขาหลัก</h1>
                     <h2 class="font-bold text-xs text-teal-600 leading-tight">Andaman Hub Medical Center</h2>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
+            <nav class="hidden lg:flex space-x-6 text-sm font-semibold text-slate-600">
                 <a href="index.html" class="text-teal-600 border-b-2 border-teal-600 pb-1">หน้าแรก</a>
-                <a href="services.html" class="hover:text-teal-600 transition">บริการ</a>
+                <a href="services.html" class="hover:text-teal-600 transition">บริการทางการแพทย์</a>
                 <a href="travel-clinic.html" class="hover:text-teal-600 transition">คลินิกนักเดินทาง</a>
-                <a href="pricing.html" class="hover:text-teal-600 transition">ค่าบริการ</a>
-                <a href="news.html" class="hover:text-teal-600 transition">ข่าวสาร</a>
+                <a href="pricing.html" class="hover:text-teal-600 transition">อัตราค่าบริการ</a>
+                <a href="news.html" class="hover:text-teal-600 transition">ข่าวสารและประกาศ</a>
                 <a href="contact.html" class="hover:text-teal-600 transition">ติดต่อเรา</a>
             </nav>
-            <div class="flex items-center space-x-3">
-                <a href="appointment.html" class="bg-rose-500 hover:bg-rose-600 text-white text-sm font-bold px-4 py-2 rounded-lg shadow transition">จองนัดหมาย</a>
-                <a href="admin.html" class="bg-slate-800 text-white text-xs px-3 py-2 rounded-lg">หลังบ้าน (Admin)</a>
+            <div class="flex items-center space-x-2">
+                <a href="appointment.html" class="bg-rose-500 hover:bg-rose-600 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-xl shadow transition">จองนัดหมาย</a>
+                <a href="admin.html" class="bg-slate-800 hover:bg-slate-700 text-white text-xs px-3 py-2 rounded-xl">⚙️ หลังบ้าน</a>
             </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white overflow-hidden">
         <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent"></div>
         <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight leading-snug">ศูนย์การแพทย์เขาหลัก <br><span class="text-teal-400">Andaman Hub Medical Center</span></h2>
-                <p class="text-slate-200 text-base font-medium">บริการดูแลรักษาพยาบาลโรคทั่วไป อุบัติเหตุฉุกเฉิน และคลินิกเวชศาสตร์การเดินทาง</p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="appointment.html" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3.5 rounded-lg shadow transition">จองนัดหมายออนไลน์</a>
-                    <a href="register.html" class="bg-white text-slate-800 font-semibold px-6 py-3.5 rounded-lg shadow transition">ลงทะเบียนผู้ป่วยใหม่</a>
+                <span class="bg-teal-500/20 text-teal-300 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-teal-500/30">Primary & Emergency Care</span>
+                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight leading-snug">
+                    ศูนย์การแพทย์เขาหลัก <br><span class="text-teal-400">Andaman Hub Medical Center</span>
+                </h2>
+                <p class="text-slate-200 text-sm lg:text-base font-light leading-relaxed">
+                    บริการดูแลรักษาพยาบาลมาตรฐานสากล สำหรับประชาชนและนักท่องเที่ยวในย่านเขาหลัก พังงา พร้อมทีมแพทย์และรถพยาบาลฉุกเฉินตลอด 24 ชม.
+                </p>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="tel:076XXXXXX" class="bg-rose-600 hover:bg-rose-700 text-white font-bold px-6 py-3.5 rounded-xl shadow transition flex items-center space-x-2">
+                        <span>🚨</span><span>โทรฉุกเฉิน / Emergency</span>
+                    </a>
+                    <a href="register.html" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3.5 rounded-xl shadow transition">
+                        📝 ลงทะเบียนผู้ป่วยใหม่
+                    </a>
+                    <a href="appointment.html" class="bg-white text-slate-800 font-semibold px-6 py-3.5 rounded-xl shadow transition">
+                        📅 ทำนัดหมาย
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="bg-rose-600 text-white py-3 px-6 shadow-md flex items-center justify-center space-x-4">
-        <span class="bg-rose-700 text-xs font-extrabold px-3 py-1 rounded uppercase">ประกาศสำคัญ</span>
-        <p class="text-sm font-medium">🚨 <strong>แจ้งเตือน:</strong> ระบบ X-Ray พร้อมให้บริการปกติ เปิดตลอด 24 ชั่วโมง</p>
-    </div>
+    <!-- Live System Status -->
+    <section class="max-w-7xl mx-auto px-6 -mt-8 relative z-20">
+        <div class="bg-white rounded-2xl shadow-md border border-slate-200/80 p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold">🟢</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">General Clinic</p>
+                    <p class="font-bold text-slate-800 text-sm">เปิดให้บริการตามปกติ (Open)</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center font-bold">🚨</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">Emergency Unit</p>
+                    <p class="font-bold text-slate-800 text-sm">สแตนด์บายตลอด 24 ชั่วโมง (24/7)</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center font-bold">🩻</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">X-Ray & CT Scan</p>
+                    <p class="font-bold text-slate-800 text-sm">พร้อมให้บริการ (Available)</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-12">
-        <h3 class="text-2xl font-bold text-slate-900 mb-6">บริการเด่น</h3>
+    <!-- Core Services Grid -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center space-y-2 mb-10">
+            <h3 class="text-2xl lg:text-3xl font-extrabold text-slate-900">บริการหลักของเรา (Core Medical Services)</h3>
+            <p class="text-slate-600 text-sm">ดูแลครบวงจรด้วยเครื่องมือและเทคโนโลยีทางการแพทย์ทันสมัย</p>
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="services.html" class="bg-teal-600 hover:bg-teal-700 text-white p-6 rounded-2xl shadow-md transition flex flex-col justify-between">
-                <div class="text-3xl mb-4">➕</div>
-                <h4 class="font-bold text-lg">ตรวจรักษาโรคทั่วไป (OPD)</h4>
+            <a href="services.html" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition space-y-3 group">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">🏥</div>
+                <h4 class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition">ตรวจรักษาโรคทั่วไป</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">ตรวจวินิจฉัยและรักษาอาการเจ็บป่วยเบื้องต้นโดยแพทย์ผู้ชำนาญการ</p>
             </a>
-            <a href="travel-clinic.html" class="bg-teal-600 hover:bg-teal-700 text-white p-6 rounded-2xl shadow-md transition flex flex-col justify-between">
-                <div class="text-3xl mb-4">💉</div>
-                <h4 class="font-bold text-lg">วัคซีนสำหรับนักเดินทาง</h4>
+            <a href="services.html" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition space-y-3 group">
+                <div class="w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">🚑</div>
+                <h4 class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition">ฉุกเฉินและอุบัติเหตุ</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">พร้อมรถพยาบาลส่งต่อโรงพยาบาลแม่ข่ายตลอด 24 ชั่วโมง</p>
             </a>
-            <a href="travel-clinic.html" class="bg-teal-600 hover:bg-teal-700 text-white p-6 rounded-2xl shadow-md transition flex flex-col justify-between">
-                <div class="text-3xl mb-4">✈️</div>
-                <h4 class="font-bold text-lg">ตรวจสุขภาพ Fit To Fly</h4>
+            <a href="services.html" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition space-y-3 group">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">🩻</div>
+                <h4 class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition">X-Ray & CT Scan</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">รังสีวินิจฉัยความผิดปกติและอาการบาดเจ็บได้อย่างรวดเร็วแม่นยำ</p>
             </a>
-            <a href="services.html" class="bg-teal-600 hover:bg-teal-700 text-white p-6 rounded-2xl shadow-md transition flex flex-col justify-between">
-                <div class="text-3xl mb-4">💊</div>
-                <h4 class="font-bold text-lg">ยาและเวชภัณฑ์ / PrEP & PEP</h4>
+            <a href="travel-clinic.html" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition space-y-3 group">
+                <div class="w-12 h-12 bg-cyan-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">✈️</div>
+                <h4 class="font-bold text-lg text-slate-900 group-hover:text-teal-600 transition">คลินิกนักเดินทาง</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">ฉีดวัคซีน ใบรับรองแพทย์ Fit to Fly และรองรับประกันภัยเดินทาง</p>
             </a>
         </div>
     </section>
 
-    <footer class="bg-white border-t border-slate-200 mt-12 py-8 px-6 text-center text-sm text-slate-600">
-        <p>© 2026 Andaman Hub Medical Center (ศูนย์การแพทย์เขาหลัก). All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6 text-center text-sm mt-12">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <p class="text-white font-bold text-base">ศูนย์การแพทย์เขาหลัก (Andaman Hub Medical Center)</p>
+            <p>📌 ต.คึกคัก อ.ตะกั่วป่า จ.พังงา 82190 (โรงพยาบาลแม่ข่าย: โรงพยาบาลตะกั่วป่า)</p>
+            <p class="text-xs text-slate-500 pt-4 border-t border-slate-800">© 2026 Andaman Hub Medical Center. All Rights Reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
