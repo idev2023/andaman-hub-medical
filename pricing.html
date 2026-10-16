@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อัตราค่าบริการ - ศูนย์การแพทย์เขาหลัก</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Prompt', sans-serif; }</style>
+</head>
+<body class="bg-[#fcfbf9] text-slate-800">
+
+    <!-- 🌐 ส่วนหัวและเมนูนำทาง (Header / Navigation) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold shadow">
+                    🌊+
+                </div>
+                <div>
+                    <h1 class="font-bold text-base text-slate-900 leading-tight">ศูนย์การแพทย์เขาหลัก</h1>
+                    <h2 class="font-bold text-xs text-teal-600 leading-tight">Andaman Hub Medical Center</h2>
+                    <p class="text-[9px] text-slate-500">คลินิกเวชกรรมรักษาโรคทั่วไป อุบัติเหตุฉุกเฉิน และเวชศาสตร์การเดินทาง</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+               <a href="index.html" class="hover:text-teal-600 transition">หน้าแรก</a>
+            <a href="services.html" class="hover:text-teal-600 transition">บริการ</a>
+            <a href="travel-clinic.html" class="hover:text-teal-600 transition">คลินิกนักเดินทาง</a>
+            <a href="pricing.html" class="hover:text-teal-600 transition">ค่าบริการ</a>
+            <a href="news.html" class="hover:text-teal-600 transition">ข่าวสาร</a>
+            <a href="contact.html" class="hover:text-teal-600 transition">ติดต่อเรา</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-rose-500 hover:bg-rose-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow transition">
+                    จองนัดหมาย
+                </a>
+                <span class="text-sm font-bold text-slate-700 cursor-pointer">TH/EN</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌟 ส่วนหัวข้อหน้าอัตราค่าบริการ (Page Hero Banner) -->
+    <section class="bg-gradient-to-r from-slate-900 via-teal-950 to-slate-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center space-y-3">
+            <span class="bg-teal-600/30 text-teal-300 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-teal-500/30">
+                Transparent Pricing & Services
+            </span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">
+                อัตราค่าบริการ (Pricing)
+            </h2>
+            <p class="text-slate-300 text-sm lg:text-base max-w-2xl mx-auto font-light">
+                อัตราค่ารักษาพยาบาลและบริการทางการแพทย์มาตรฐาน โปร่งใส รองรับทั้งคนไทยและนักท่องเที่ยวต่างชาติ
+            </p>
+        </div>
+    </section>
+
+    <!-- 🔴 แถบประกาศด่วน (Important Announcements Bar) -->
+    <div class="bg-rose-600 text-white py-3 px-6 shadow-md flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-4">
+        <span class="bg-rose-700 text-xs font-extrabold px-3 py-1 rounded uppercase tracking-wider">ประกาศสำคัญ</span>
+        <p class="text-sm font-medium text-center">
+            🚨 <strong>แจ้งเตือน:</strong> ระบบ X-Ray ปิดให้บริการชั่วคราวตั้งแต่วันที่ [วันที่] ถึง [วันที่] โปรดติดต่อคลินิกสำหรับช่องทางทดแทน
+        </p>
+    </div>
+
+    <!-- 💰 ตารางอัตราค่าบริการ (Pricing Tables) -->
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+        
+        <!-- หมวดที่ 1: ตรวจรักษาโรคทั่วไป (OPD) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="bg-teal-600 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="font-bold text-lg flex items-center space-x-2">
+                    <span>🩺</span>
+                    <span>ค่าบริการตรวจรักษาโรคทั่วไป (General OPD Consultation)</span>
+                </h3>
+                <span class="text-xs bg-teal-700 px-3 py-1 rounded-full font-medium">มาตรฐานกระทรวงสาธารณสุข</span>
+            </div>
+            <div class="divide-y divide-slate-100">
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ค่าบริการทางการแพทย์และพยาบาลเบื้องต้น (Doctor Consultation Fee)</p>
+                        <p class="text-xs text-slate-500">ตรวจวินิจฉัยและให้คำปรึกษาโดยแพทย์ (ไม่รวมค่ายา)</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 500 - 1,000 บาท*
+                    </div>
+                </div>
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ค่าบริการทำแผล / ล้างแผล / ทำความสะอาดแผล (Wound Dressing)</p>
+                        <p class="text-xs text-slate-500">รวมเวชภัณฑ์ทำแผลเบื้องต้นและอุปกรณ์ปลอดเชื้อ</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 300 บาท / ครั้ง
+                    </div>
+                </div>
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ค่าบริการฉีดยา / ให้สารน้ำทางหลอดเลือดดำ (Injection & IV Drip)</p>
+                        <p class="text-xs text-slate-500">ไม่รวมค่ายาและเวชภัณฑ์ฉีด</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 200 - 800 บาท
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- หมวดที่ 2: รังสีวินิจฉัย (X-Ray & CT Scan) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="bg-teal-600 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="font-bold text-lg flex items-center space-x-2">
+                    <span>🩻</span>
+                    <span>รังสีวินิจฉัยและห้องปฏิบัติการ (X-Ray & Lab)</span>
+                </h3>
+            </div>
+            <div class="divide-y divide-slate-100">
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">เอกซเรย์ทั่วไป (General X-Ray)</p>
+                        <p class="text-xs text-slate-500">ตรวจความผิดปกติกระดูกหรือปอด</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 600 บาท / ท่า
+                    </div>
+                </div>
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ตรวจเอกซเรย์คอมพิวเตอร์เบื้องต้น (CT Scan)</p>
+                        <p class="text-xs text-slate-500">ตามดุลยพินิจของแพทย์เพื่อการวินิจฉัยเคสเร่งด่วน</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        สอบถามราคา ณ จุดบริการ
+                    </div>
+                </div>
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ชุดตรวจทางห้องปฏิบัติการเบื้องต้น (Blood Lab Screening)</p>
+                        <p class="text-xs text-slate-500">ตรวจความสมบูรณ์ของเม็ดเลือด น้ำตาล หรือเกลือแร่</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 400 บาท
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- หมวดที่ 3: คลินิกนักเดินทางและใบรับรองแพทย์ -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="bg-teal-600 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="font-bold text-lg flex items-center space-x-2">
+                    <span>✈️</span>
+                    <span>คลินิกนักเดินทางและใบรับรองแพทย์ (Travel Clinic & Certificates)</span>
+                </h3>
+            </div>
+            <div class="divide-y divide-slate-100">
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">ใบรับรองแพทย์ภาษาอังกฤษ (Fit to Fly Certificate)</p>
+                        <p class="text-xs text-slate-500">สำหรับเดินทางทางอากาศหรือทำกิจกรรมดำน้ำ</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        เริ่มต้น 500 บาท
+                    </div>
+                </div>
+                <div class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-start md:items-center hover:bg-slate-50 transition">
+                    <div>
+                        <p class="font-bold text-slate-900">วัคซีนป้องกันโรคสำหรับนักเดินทาง (Travel Vaccines)</p>
+                        <p class="text-xs text-slate-500">เช่น วัคซีนไข้หวัดใหญ่ / บาดทะยัก / ตับอักเสบ</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 font-bold text-teal-700 text-base">
+                        ตามราคาประกาศของกระทรวงฯ
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- หมายเหตุท้ายตาราง -->
+        <div class="bg-teal-50 border border-teal-100 p-6 rounded-2xl text-xs text-teal-900 space-y-2">
+            <p class="font-bold text-sm">ℹ️ หมายเหตุเพิ่มเติม:</p>
+            <p>* อัตราค่าบริการข้างต้นเป็นราคาประเมินเบื้องต้น อาจมีการเปลี่ยนแปลงตามอาการ ความซับซ้อนของโรค และเวชภัณฑ์ที่แพทย์สั่งใช้จริง</p>
+            <p>* สำหรับชาวต่างชาติและผู้ใช้สิทธิ์ประกันภัยการเดินทาง (Travel Insurance) สามารถนำใบเสร็จไปเบิกคืนกับบริษัทประกันภัยของท่านได้ โดยทางศูนย์การแพทย์มีบริการออกเอกสารทางการแพทย์รองรับ</p>
+        </div>
+
+    </main>
+
+    <!-- 📞 ข้อมูลติดต่อ (Contact Details Footer Bar) -->
+    <footer class="bg-white border-t border-slate-200 py-8 px-6 mt-12">
+        <div class="max-w-7xl mx-auto">
+            <h4 class="font-bold text-slate-900 text-lg mb-4">ช่องทางการติดต่อ</h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 text-sm text-slate-600">
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">📞</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">โทร. 076-XXX-XXX</p>
+                        <p class="text-xs text-slate-500">(เวลาทำการ)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-rose-600 text-xl">🚨</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ฉุกเฉิน: 076-XXX-XXX</p>
+                        <p class="text-xs text-slate-500">(นอกเวลาทำการ)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">💬</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ไลน์ไอดี:</p>
+                        <p class="text-xs text-slate-600">AndamanHub</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">📍</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ต.คึกคัก อ.ตะกั่วป่า</p>
+                        <p class="text-xs text-slate-600">จ.พังงา 82190</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">✉️</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">อีเมล:</p>
+                        <p class="text-xs text-slate-600">info@andamanhub.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

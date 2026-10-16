@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการทางการแพทย์ - ศูนย์การแพทย์เขาหลัก</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Prompt', sans-serif; }</style>
+</head>
+<body class="bg-[#fcfbf9] text-slate-800">
+
+    <!-- 🌐 ส่วนหัวและเมนูนำทาง (Header / Navigation) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold shadow">
+                    🌊+
+                </div>
+                <div>
+                    <h1 class="font-bold text-base text-slate-900 leading-tight">ศูนย์การแพทย์เขาหลัก</h1>
+                    <h2 class="font-bold text-xs text-teal-600 leading-tight">Andaman Hub Medical Center</h2>
+                    <p class="text-[9px] text-slate-500">คลินิกเวชกรรมรักษาโรคทั่วไป อุบัติเหตุฉุกเฉิน และเวชศาสตร์การเดินทาง</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+               <a href="index.html" class="hover:text-teal-600 transition">หน้าแรก</a>
+            <a href="services.html" class="hover:text-teal-600 transition">บริการ</a>
+            <a href="travel-clinic.html" class="hover:text-teal-600 transition">คลินิกนักเดินทาง</a>
+            <a href="pricing.html" class="hover:text-teal-600 transition">ค่าบริการ</a>
+            <a href="news.html" class="hover:text-teal-600 transition">ข่าวสาร</a>
+            <a href="contact.html" class="hover:text-teal-600 transition">ติดต่อเรา</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-rose-500 hover:bg-rose-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow transition">
+                    จองนัดหมาย
+                </a>
+                <span class="text-sm font-bold text-slate-700 cursor-pointer">TH/EN</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌟 ส่วนหัวข้อหน้าบริการ (Page Hero Banner) -->
+    <section class="bg-gradient-to-r from-slate-900 via-teal-950 to-slate-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center space-y-3">
+            <span class="bg-teal-600/30 text-teal-300 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-teal-500/30">
+                Medical Services & Specialties
+            </span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">
+                บริการทางการแพทย์และเทคโนโลยีวินิจฉัย
+            </h2>
+            <p class="text-slate-300 text-sm lg:text-base max-w-2xl mx-auto font-light">
+                ดูแลรักษาพยาบาลโดยทีมแพทย์และบุคลากรผู้เชี่ยวชาญ พร้อมอุปกรณ์และระบบส่งต่อฉุกเฉินมาตรฐาน
+            </p>
+        </div>
+    </section>
+
+    <!-- 🔴 แถบประกาศด่วน (Important Announcements Bar) -->
+    <div class="bg-rose-600 text-white py-3 px-6 shadow-md flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-4">
+        <span class="bg-rose-700 text-xs font-extrabold px-3 py-1 rounded uppercase tracking-wider">ประกาศสำคัญ</span>
+        <p class="text-sm font-medium text-center">
+            🚨 <strong>แจ้งเตือน:</strong> ระบบ X-Ray ปิดให้บริการชั่วคราวตั้งแต่วันที่ [วันที่] ถึง [วันที่] โปรดติดต่อคลินิกสำหรับช่องทางทดแทน
+        </p>
+    </div>
+
+    <!-- 🏥 รายการบริการทางการแพทย์หลัก (Primary & Specialized Services) -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold text-slate-900 mb-2">บริการหลักของเรา (Core Medical Services)</h3>
+        <p class="text-slate-600 text-sm mb-8">ครอบคลุมการรักษาพยาบาลเบื้องต้น การตรวจวินิจฉัย และการดูแลฉุกเฉินตลอด 24 ชั่วโมง</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Service Item 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    🩺
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">ตรวจรักษาโรคทั่วไป (General OPD)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    วินิจฉัยและรักษาอาการเจ็บป่วยเบื้องต้น เช่น ไข้หวัด ปวดศีรษะ ท้องเสีย กระเพาะอาหารอักเสบ เวียนศีรษะ และโรคทั่วไป
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-600">
+                    <span>เปิดให้บริการทุกวัน</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-rose-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    🚑
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">อุบัติเหตุและฉุกเฉิน (Emergency 24/7)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    ปฐมพยาบาลและคัดกรองผู้ป่วยบาดเจ็บ (Trauma Triage) อุบัติเหตุทางน้ำ/ท่องเที่ยว พร้อมบริการรถพยาบาลส่งต่อโรงพยาบาลแม่ข่าย
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-rose-600">
+                    <span>สแตนด์บายตลอด 24 ชั่วโมง</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    🩻
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">เอกซเรย์ & CT Scan (X-Ray & CT)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    เครื่องเอกซเรย์คอมพิวเตอร์ (CT scan) เบื้องต้นและเครื่องเอกซเรย์ทั่วไป ตรวจวินิจฉัยความผิดปกติและอาการบาดเจ็บภายใน
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-600">
+                    <span>รังสีวินิจฉัยมาตรฐาน</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    💉
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">คลินิกนักเดินทาง & วัคซีน (Travel Clinic)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    ฉีดวัคซีนป้องกันโรคสำหรับนักท่องเที่ยว ออกเอกสารตรวจสุขภาพก่อนขึ้นเครื่อง (Fit to Fly Certificate) และการปรึกษาเวชศาสตร์การเดินทาง
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-600">
+                    <span>บริการนักท่องเที่ยวไทย/ต่างชาติ</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Service Item 5 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    🧪
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">ตรวจห้องปฏิบัติการ (Laboratory)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    ตรวจวิเคราะห์โรคทางห้องปฏิบัติการเบื้องต้น ตรวจเลือด คัดกรองการติดเชื้อ ตรวจการแพ้อาหาร/ยา และการตรวจสุขภาพตามระยะ
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-600">
+                    <span>รายงานผลรวดเร็ว</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Service Item 6 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition space-y-4">
+                <div class="w-12 h-12 bg-teal-600 text-white rounded-xl flex items-center justify-center text-2xl font-bold">
+                    🦷
+                </div>
+                <h4 class="font-bold text-lg text-slate-900">หน่วยทันตกรรม (Dental Unit)</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    บริการยกระดับศักยภาพเพิ่มเติม การดูแลรักษาช่องปากและฟันเบื้องต้นสำหรับประชาชนและนักท่องเที่ยวในย่านเขาหลัก
+                </p>
+                <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-600">
+                    <span>เปิดบริการตามนัดหมาย</span>
+                    <a href="#" class="hover:underline">รายละเอียดเพิ่มเติม &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 💳 การประกันภัยและการเคลม (Insurance & Payment Support) -->
+    <section class="bg-white border-y border-slate-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div class="lg:col-span-2 space-y-3">
+                <span class="bg-teal-50 text-teal-700 text-xs font-bold px-3 py-1 rounded-full border border-teal-100">
+                    International Patients & Insurance
+                </span>
+                <h3 class="text-2xl font-bold text-slate-900">การรองรับประกันภัยและการบริการนักท่องเที่ยวต่างชาติ</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    อำนวยความสะดวกเรื่องการประสานงานประกันภัยเดินทาง (Travel Insurance) ประกันสุขภาพส่วนบุคคล พร้อมทีมงานสื่อสารภาษาอังกฤษและออกเอกสารการรักษาทางการแพทย์เพื่อใช้ในการเคลม
+                </p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 text-center space-y-3">
+                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">ติดต่อเจ้าหน้าที่ประสานงานประกันภัย</p>
+                <p class="text-lg font-bold text-slate-800">✉️ info@andamanhub.com</p>
+                <a href="#" class="inline-block bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold px-5 py-2.5 rounded-lg shadow transition">
+                    สอบถามขั้นตอนการใช้ประกัน
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 ข้อมูลติดต่อ (Contact Details Footer Bar) -->
+    <footer class="bg-white border-t border-slate-200 py-8 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h4 class="font-bold text-slate-900 text-lg mb-4">ช่องทางการติดต่อ</h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 text-sm text-slate-600">
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">📞</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">โทร. 076-XXX-XXX</p>
+                        <p class="text-xs text-slate-500">(เวลาทำการ)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-rose-600 text-xl">🚨</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ฉุกเฉิน: 076-XXX-XXX</p>
+                        <p class="text-xs text-slate-500">(นอกเวลาทำการ)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">💬</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ไลน์ไอดี:</p>
+                        <p class="text-xs text-slate-600">AndamanHub</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">📍</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">ต.คึกคัก อ.ตะกั่วป่า</p>
+                        <p class="text-xs text-slate-600">จ.พังงา 82190</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <span class="text-teal-600 text-xl">✉️</span>
+                    <div>
+                        <p class="font-semibold text-slate-800">อีเมล:</p>
+                        <p class="text-xs text-slate-600">info@andamanhub.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
