@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนผู้ป่วยใหม่ - ศูนย์การแพทย์เขาหลัก</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Prompt', 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- 🌐 Top Bar -->
+    <div class="bg-gradient-to-r from-teal-600 to-cyan-700 text-white text-xs md:text-sm py-2 px-6 flex justify-between items-center">
+        <span>📍 ตำบลคึกคัก อ.ตะกั่วป่า พังงา (โรงพยาบาลแม่ข่าย: รพ.ตะกั่วป่า)</span>
+        <div class="flex items-center space-x-2">
+            <span class="bg-white text-teal-800 px-2 py-0.5 rounded text-xs font-bold">TH</span>
+            <span class="hover:underline cursor-pointer">EN</span>
+        </div>
+    </div>
+
+    <!-- 🏥 Header / Navbar -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md">
+                    🌊
+                </div>
+                <div>
+                    <h1 class="font-bold text-base md:text-lg text-slate-900 leading-tight">ศูนย์การแพทย์เขาหลัก</h1>
+                    <p class="text-xs text-teal-600 font-medium">Andaman Hub Medical Center</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex space-x-6 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="hover:text-teal-600 transition">หน้าแรก</a>
+                <a href="services.html" class="hover:text-teal-600 transition">บริการ</a>
+                <a href="travel-clinic.html" class="hover:text-teal-600 transition">คลินิกนักเดินทาง</a>
+                <a href="pricing.html" class="hover:text-teal-600 transition">ค่าบริการ</a>
+                <a href="news.html" class="hover:text-teal-600 transition">ข่าวสาร</a>
+                <a href="contact.html" class="hover:text-teal-600 transition">ติดต่อเรา</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="appointment.html" class="bg-rose-500 hover:bg-rose-600 text-white text-sm font-bold px-4 py-2 rounded-lg shadow transition">จองนัดหมาย</a>
+                <a href="admin.html" class="bg-slate-800 text-white text-xs px-3 py-2 rounded-lg hover:bg-slate-700 transition">หลังบ้าน</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌟 Page Header Banner -->
+    <section class="bg-gradient-to-b from-teal-50/70 to-white py-10 px-6 text-center">
+        <div class="max-w-3xl mx-auto space-y-2">
+            <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full">
+                New Patient Pre-Registration
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+                ลงทะเบียนผู้ป่วยใหม่ล่วงหน้า
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base">
+                กรอกข้อมูลล่วงหน้าเพื่อลดเวลาการรอคอยหน้าเคาน์เตอร์บริการ
+            </p>
+        </div>
+    </section>
+
+    <!-- 📝 Registration Form Container -->
+    <main class="max-w-4xl mx-auto px-6 py-8">
+        
+        <!-- Tab Switcher: เลือกสัญชาติ -->
+        <div class="bg-white p-2 rounded-2xl shadow-sm border border-slate-200 flex mb-8">
+            <button id="btn-thai" onclick="switchForm('thai')" class="flex-1 py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center space-x-2 bg-teal-600 text-white shadow-sm">
+                <span>🇹🇭</span>
+                <span>คนไทย (Thai National)</span>
+            </button>
+            <button id="btn-foreigner" onclick="switchForm('foreigner')" class="flex-1 py-3 rounded-xl font-semibold text-sm text-slate-600 hover:text-teal-600 transition flex items-center justify-center space-x-2">
+                <span>🌐</span>
+                <span>ชาวต่างชาติ (Foreigner / Tourist)</span>
+            </button>
+        </div>
+
+        <!-- 🇹🇭 ฟอร์มสำหรับคนไทย -->
+        <form id="form-thai" class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-slate-100 space-y-8" onsubmit="event.preventDefault(); alert('ลงทะเบียนสำเร็จ! ระบบได้สร้าง Reference Number สำหรับติดต่อหน้าเคาน์เตอร์เรียบร้อยแล้ว'); window.location.href='index.html';">
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center space-x-2">
+                    <span class="bg-teal-100 text-teal-700 w-7 h-7 rounded-lg flex items-center justify-center text-sm">1</span>
+                    <span>ข้อมูลส่วนตัว (Personal Details)</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">เลขบัตรประชาชน (13 หลัก) <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="x-xxxx-xxxxx-xx-x" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">คำนำหน้าชื่อ <span class="text-rose-500">*</span></label>
+                        <select class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white">
+                            <option>นาย</option>
+                            <option>นาง</option>
+                            <option>นางสาว</option>
+                            <option>เด็กชาย</option>
+                            <option>เด็กหญิง</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">ชื่อ - นามสกุล <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="ระบุชื่อและนามสกุล" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">วัน/เดือน/ปีเกิด <span class="text-rose-500">*</span></label>
+                        <input type="date" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center space-x-2">
+                    <span class="bg-teal-100 text-teal-700 w-7 h-7 rounded-lg flex items-center justify-center text-sm">2</span>
+                    <span>ข้อมูลการติดต่อ & สิทธิการรักษา</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">เบอร์โทรศัพท์ <span class="text-rose-500">*</span></label>
+                        <input type="tel" required placeholder="08x-xxx-xxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">สิทธิการรักษาพยาบาล <span class="text-rose-500">*</span></label>
+                        <select class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white">
+                            <option>บัตรทอง / หลักประกันสุขภาพแห่งชาติ</option>
+                            <option>สิทธิประกันสังคม</option>
+                            <option>สิทธิข้าราชการ / จ่ายตรง</option>
+                            <option>ประกันสุขภาพเอกชน / ชำระเงินเอง</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">ที่อยู่ปัจจุบัน (ในเขาหลัก/พังงา)</label>
+                        <input type="text" placeholder="บ้านเลขที่, หมู่บ้าน, ตำบล" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center space-x-2">
+                    <span class="bg-teal-100 text-teal-700 w-7 h-7 rounded-lg flex items-center justify-center text-sm">3</span>
+                    <span>ข้อมูลสุขภาพ & เอกสารแนบ</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">ประวัติการแพ้ยา / แพ้อาหาร</label>
+                        <input type="text" placeholder="ระบุตัวยาหรืออาหารที่แพ้ (ถ้ามี)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">โรคประจำตัว</label>
+                        <input type="text" placeholder="ระบุโรคประจำตัว (ถ้ามี)" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">แนบรูปภาพบัตรประชาชน (ภาพถ่ายชัดเจน)</label>
+                        <div class="border-2 border-dashed border-slate-200 rounded-2xl p-6 text-center hover:bg-slate-50 transition cursor-pointer">
+                            <span class="text-2xl">📤</span>
+                            <p class="text-xs text-slate-600 font-medium mt-2">คลิกเพื่ออัปโหลด หรือลากไฟล์มาวางที่นี่ (JPG, PNG)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-teal-600/20 transition">
+                ส่งข้อมูลลงทะเบียน / Submit Registration
+            </button>
+        </form>
+
+        <!-- 🌐 ฟอร์มสำหรับชาวต่างชาติ (Foreigner Form - Hidden by Default) -->
+        <form id="form-foreigner" class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-slate-100 space-y-8 hidden" onsubmit="event.preventDefault(); alert('Registration successful! Reference code generated for counter service.'); window.location.href='index.html';">
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center space-x-2">
+                    <span class="bg-cyan-100 text-cyan-700 w-7 h-7 rounded-lg flex items-center justify-center text-sm">1</span>
+                    <span>Personal Details (Passport Information)</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Passport Number <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="e.g. A12345678" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name (as in Passport) <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="First Name - Last Name" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Date of Birth <span class="text-rose-500">*</span></label>
+                        <input type="date" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Nationality <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="e.g. German, Swedish, Chinese" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center space-x-2">
+                    <span class="bg-cyan-100 text-cyan-700 w-7 h-7 rounded-lg flex items-center justify-center text-sm">2</span>
+                    <span>Accommodation & Travel Insurance</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Hotel / Resort Name in Khao Lak <span class="text-rose-500">*</span></label>
+                        <input type="text" required placeholder="Resort / Hotel Name" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Room Number</label>
+                        <input type="text" placeholder="e.g. 302" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Phone / WhatsApp Number <span class="text-rose-500">*</span>
